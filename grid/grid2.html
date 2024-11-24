@@ -1,0 +1,23 @@
+<!-- grilles avec des colonnes et lignes specifiques -->
+<style>
+    .container {
+      display: grid;
+      grid-template-columns: 100px 200px auto; /* Largeurs fixes et flexibles */
+      grid-template-rows: 100px auto; /* Hauteur d'une ligne fixe et une ligne flexible */
+      gap: 15px;
+    }
+    
+    .box {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+    </style>
+    
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+    

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Divs Horizontales</title>
+<style>
+/* Conteneur principal */
+.container {
+  width: 100%; /* Prend toute la largeur disponible */
+  overflow: hidden; /* Gère le débordement des float */
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+/* Divs enfants */
+.box {
+  float: left; /* Positionne les divs horizontalement */
+  width: 30%; /* Chaque div prend 30% de la largeur du conteneur */
+  margin: 1.66%; /* Ajoute un espace uniforme entre les divs */
+  background-color: #2196f3; /* Couleur d'arrière-plan */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+/* Ajustement pour les petits écrans */
+@media (max-width: 768px) {
+  .box {
+    width: 100%; /* Chaque div occupe toute la largeur */
+    margin: 0 0 10px 0; /* Espacement entre les divs en vertical */
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">Div 1</div>
+  <div class="box">Div 2</div>
+  <div class="box">Div 3</div>
+</div>
+
+</body>
+</html>

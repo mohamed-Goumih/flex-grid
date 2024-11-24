@@ -1,0 +1,36 @@
+
+<!-- Disposition flexible de texte et image -->
+<style>
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    .text {
+      flex: 1;
+      background-color: lightcoral;
+      padding: 20px;
+    }
+    
+    .image {
+      flex: 1;
+      background-color: lightblue;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    </style>
+    
+    <div class="container">
+      <div class="text">Voici un bloc de texte.</div>
+      <div class="image">[Image]</div>
+    </div>
+    

@@ -1,0 +1,38 @@
+<!-- Barre de navigation responsive -->
+<style>
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      padding: 10px;
+    }
+    
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+    
+    .menu {
+      display: flex;
+      gap: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+    </style>
+    
+    <div class="nav">
+      <a href="#">Logo</a>
+      <div class="menu">
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.flex-grid {
+		  display: flex;
+		}
+		.flex-grid .col {
+		  flex: 1;
+		}
+		.flex-grid-3 {
+		  display: flex;
+		  justify-content: space-between;
+		}
+		.flex-grid-3 .col {
+		  width: 32%;
+		}
+
+		@media (max-width: 400px) {
+		  .flex-grid,
+		  .flex-grid-3 {
+		    display: block;
+		    .col {
+		      width: 100%;
+		      margin: 0 0 10px 0;
+		    }
+		  }
+		}
+		* {
+		  box-sizing: border-box;
+		}
+		body {
+		  padding: 20px;
+		}
+		.flex-grid { 
+		  margin: 0 0 20px 0;
+		}
+		.col {
+		  background: salmon;
+		  padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-grid">
+	  <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+	  <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+	  <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+	 
+	</div>
+
+	<div class="flex-grid">
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+	 
+	</div>
+
+	<div class="flex-grid-3">
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, autem.</div>
+	</div>
+</body>
+</html>

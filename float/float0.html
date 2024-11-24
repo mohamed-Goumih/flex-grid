@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu déroulant avec float</title>
+<style>
+/* Style général pour le menu */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left; /* Les éléments s'alignent horizontalement */
+  position: relative; /* Nécessaire pour positionner le sous-menu */
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+/* Style pour le sous-menu */
+.navbar .dropdown {
+  display: none; /* Masque le sous-menu par défaut */
+  position: absolute; /* Positionne le sous-menu par rapport au parent */
+  background-color: #333;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.navbar .dropdown a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .dropdown a:hover {
+  background-color: #575757;
+}
+
+/* Affiche le sous-menu lors du survol */
+.navbar li:hover .dropdown {
+  display: block; /* Affiche le sous-menu */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <ul>
+    <li><a href="#">Accueil</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul class="dropdown">
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Développement</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">À propos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- Utilisation de grid-template-areas -->
+<style>
+    .container {
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+    }
+    
+    .header { grid-area: header; background: lightblue; }
+    .main { grid-area: main; background: lightgreen; }
+    .sidebar { grid-area: sidebar; background: lightcoral; }
+    .footer { grid-area: footer; background: lightsalmon; }
+    </style>
+    
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="main">Main Content</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="footer">Footer</div>
+    </div>
+    

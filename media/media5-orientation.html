@@ -1,0 +1,31 @@
+<style>
+    Détection de l'orientation
+Portrait :
+css
+Copier le code
+@media (orientation: portrait) {
+  body {
+    background-color: lightblue;
+  }
+}
+Paysage :
+css
+Copier le code
+@media (orientation: landscape) {
+  body {
+    background-color: lightgreen;
+  }
+}
+5. Résolution de l'écran
+Pour cibler des écrans à haute densité de pixels (comme les écrans Retina) :
+
+css
+Copier le code
+@media (min-resolution: 2dppx) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+      
+</style>
